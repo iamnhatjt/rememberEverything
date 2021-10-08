@@ -1,0 +1,39 @@
+@import '../../style/app.scss';
+
+.verNav {
+    ul.varNav-list {
+        padding: 0;
+        margin: 4px 8px;
+        li.verNav-item {
+            position: relative;
+            margin: 4px 0;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+            svg.icon-verNav {
+                font-size: 24px;
+            }
+            .hover-infor {
+                position: absolute;
+                left: 105%;
+                padding: 6px 10px;
+                background-color: #ccc;
+                border-radius: 8px;
+                white-space: nowrap;
+                color: #333;
+                display: none;
+            }
+        }
+        .noting > .hover-infor {
+            display: block !important;
+        }
+        li.verNav-item:hover {
+            background-color: rgba(225,225,225, 0.1);
+        }
+    }
+
+}

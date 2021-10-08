@@ -1,0 +1,10 @@
+@import '../style/app.scss';
+
+.body-web {
+    background-color: $primary-background;
+    color: $primary-color;
+    display: flex;
+    .body-main {
+        flex: 1;
+    }
+}

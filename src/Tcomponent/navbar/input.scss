@@ -1,0 +1,58 @@
+@import '../../style/app.scss';
+
+nav.horiNav {
+    background-color: $color-nav;
+    display: flex;
+    .margin-page {
+        margin: 16px 24px;
+        width: 100%;
+        color: $primary-color;
+        display: flex;
+        .horiNav-left {
+            width: calc(100%/4);
+        }
+        .horiNav-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .space-search {
+                height: 40px;
+                width: 440px;
+                display: flex;
+                align-items: center;
+                background-color: #282e3e;
+                border-radius: 20px;
+                overflow: hidden;
+                label.icon-search-cover {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    margin: 0px 4px 0 14px;
+                }
+                label.icon-search-cover:hover {
+                    cursor: text;
+                }
+                input.input-search {
+                    background-color: #282e3e;
+                    border: none;
+                    color: $primary-color;
+                    flex: 1;
+                }
+                input.input-search:focus {
+                    outline: none;
+                }
+            }
+        }
+        .horiNav-right {
+            width: calc(100%/4);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .notify {
+                font-size: 20px;
+            }
+        }
+    }
+}

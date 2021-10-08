@@ -1,0 +1,19 @@
+.n-cursor-hover:hover {
+    cursor: pointer;
+    text-shadow: 3px 3px 3px rgb(241, 246, 241);
+    color: greenyellow;
+    transition: 0.6s ease;
+}
+
+.n-cursor {
+    cursor: pointer;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.Nbg {
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.233);
+}
