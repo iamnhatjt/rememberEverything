@@ -1,9 +1,6 @@
 [{
-        "tuvung": "name",
-        "nghia": "Ten"
-    },
-    {
-        "tuvung": "name",
-        "nghia": "Ten"
+        "tuvung": "Bạn đã sẵn sàng làm bài tâp (y/n)",
+        "nghia": "y"
     }
+
 ]
