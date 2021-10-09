@@ -10,7 +10,7 @@ const HorizontalNav = () => {
                 <div className='horiNav-left'></div>
                 <div className='horiNav-center'>
                     <div className='space-search'>
-                        <label for='input-search' className='icon-search-cover'>
+                        <label htmlFor='input-search' className='icon-search-cover'>
                             <IoSearchOutline className='icon-search' />
                         </label>
                         <input id='input-search' className='input-search' type='text' placeholder='Tìm kiếm học phần...'></input>
