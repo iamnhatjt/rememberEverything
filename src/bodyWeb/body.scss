@@ -4,6 +4,7 @@
     background-color: $primary-background;
     color: $primary-color;
     display: flex;
+    min-height: 100vh;
     .body-main {
         flex: 1;
     }
