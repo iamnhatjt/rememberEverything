@@ -80,6 +80,8 @@ const Input = () => {
             for(let i = numberCard - 1; i < lengthCardList - 1; i++) {
                 changeInputByAdd(cardItems[i], cardItems[i+1])
             }
+            const removeCard = cardList.slice(0, -1)
+            setcardList(removeCard)
         }
 
         function changeValueCard(numberCard) {
