@@ -2,6 +2,7 @@ import React from "react";
 import VerticalNav from "./VerticalNav/VerticalNav.js";
 import Logic from '../Ncomponent/Logic/index.jsx'
 import View from '../Ncomponent/View/index.jsx'
+import Input from "../Tcomponent/Input/input.js";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +23,7 @@ const Body = () => {
                 <div className='body-main'>
                     <Route exact path='/bai_viet' component={Logic}/>
                     <Route exact path='/bai_viet' component={View}/>
+                    <Route exact path='/tao' component={Input}/>
                 </div>
             </Switch>
         </main>
