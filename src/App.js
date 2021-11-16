@@ -8,6 +8,7 @@ import { Provider } from 'react-redux'
 import Login from './Tcomponent/login_regis/login_regisSlice'
 
 const App = () => {
+  
   return(
     <Router>
       <Switch>
