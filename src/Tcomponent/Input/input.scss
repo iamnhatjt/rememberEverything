@@ -1,0 +1,123 @@
+@import '../../style/app.scss';
+
+.body-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.underline-input {
+    border-top: 4px solid $primary-color;
+}
+
+li {
+    list-style: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    header.page-create__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        span.text-head {
+            font-size: 28px;
+            font-weight: 600;
+            margin-left: 4px;
+        }
+        button.btn-create {
+            font-size: 18px;
+            outline: none;
+            border: none;
+            margin-right: 4px;
+            border-radius: 4px;
+            background-color: #3ccfcf;
+            padding: 10px 20px;
+        }
+    }
+    main.page-create__main {
+        width: 100%;
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        ul.card-list {
+            width: 100%;
+            padding: 0;
+            li.card__item {
+                background-color: #282e3e;
+                border-radius: 8px;
+                padding: 12px 0;
+                header.card--head {
+                    border-bottom: #000 2px solid;
+                    .margin-head {
+                        margin: 0 24px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 4px 0;
+                        span.clear {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                main.card__main {
+                    display: flex;
+                    padding: 12px 0;
+                    .space--word {
+                        flex: 1;
+                        margin: 0 24px;
+                        input.input--word {
+                            background-color: #282e3e;
+                            width: 100%;
+                            border: none;
+                            color: $primary-color;
+                        }
+                        input.input--word:focus {
+                            outline: none;
+                        }
+                        input.input--word:focus ~ .underline-input {
+                            border-top: 4px solid #3ccfcf;
+                        }
+                    }
+                    .space--mean {
+                        flex: 1;
+                        margin: 0 24px;
+                        input.input--mean {
+                            background-color: #282e3e;
+                            border: none;
+                            width: 100%;
+                            color: $primary-color;
+                        }
+                        input.input--mean:focus {
+                            outline: none;
+                        }
+                        input.input--mean:focus ~ .underline-input {
+                            border-top: 4px solid #3ccfcf;
+                        }
+                    }
+                }
+            }
+            li.add--card {
+                display: flex;
+                justify-content: center;
+                margin: 8px 0;
+                .margin-icon-add {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    svg.icon--add {
+                        color: #3ccfcf;
+                        font-size: 40px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
