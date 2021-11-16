@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// trả về success để bt tạo tài khoản thành công nếu ko đc thì trả về false
+// server trả về string để client thông báo cho người dùng vd: đăng nhập không thành công thì trả về 'tài khoản mật khẩu không chính xác'
 const initialState = {
   isCreateSuccess: 'init',
   isLoginSuccess: 'init',
